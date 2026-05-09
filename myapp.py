@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from datetime import date
 from streamlit_gsheets import GSheetsConnection
-conn = st.connection("gsheets", type=GSheetsConnection)
+conn = st.connection("gsheets", type=GSheetsConnection, spreadsheet="https://docs.google.com/spreadsheets/d/1-yvBDHwkA__r3lsY-yGEcxb1kWz608yzZkIVQuzch4o/edit?usp=drivesdk")
 st.header("Record New Sale")
 
 # --- FORM SECTION ---
