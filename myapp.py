@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 from datetime import date
-from streamlit_gsheets import GSheetsconnection
+from streamlit_gsheets import GSheetsConnection
 conn = st.connection("gsheets", type=GSheetsConnection)
 st.header("Record New Sale")
 
