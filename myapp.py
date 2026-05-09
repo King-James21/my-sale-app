@@ -19,8 +19,6 @@ quantity = st.number_input("Quantity", min_value=1, step=1)
 sale_date = st.date_input("Date of Sale", date.today())
 
   # Change line 31 to include a unique key just in case
-# Create the connection
-conn = st.connection("gsheets", type=GSheetsConnection)
 
 if st.button("Submit sale", key="manual_entry"):
     if item and location:
