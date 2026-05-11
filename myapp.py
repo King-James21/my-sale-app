@@ -4,6 +4,7 @@ import os
 from datetime import date
 from streamlit_gsheets import GSheetsConnection
 conn = st.connection("gsheets", type=GSheetsConnection)
+df_history = conn.read(worksheet="Sheet1", ttl=0)
 st.header("Record New Sale")
 
 # --- FORM SECTION ---
